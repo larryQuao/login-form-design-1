@@ -1,0 +1,32 @@
+@use 'color' as *;
+
+.login-links {
+    padding: 0;
+    // margin: 1rem 0;
+
+    ul{
+        list-style: none;
+
+        li{
+            display: inline;
+            margin-right: 1rem;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+                font-size: 0.75rem;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            .login {
+                border-bottom: 3px solid $color-5;
+                padding:  0.2rem 0.4rem;
+            }
+
+            .signup {
+                color: $color-1;
+            }
+        }
+    }
+}

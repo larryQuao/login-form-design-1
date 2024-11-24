@@ -1,0 +1,19 @@
+@use 'color' as *;
+@use 'mixins' as *;
+
+
+.info {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid red;
+    color: $color-white;
+
+    &-title {
+        @include font-decorate(1.7rem, 600);
+        margin-bottom: 0.525rem;
+    }
+
+    &-text {
+        @include font-decorate(0.78rem, 400);
+    }
+}

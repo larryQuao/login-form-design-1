@@ -1,0 +1,85 @@
+.login-links {
+  padding: 0;
+}
+.login-links ul {
+  list-style: none;
+}
+.login-links ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+.login-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+}
+.login-links ul li .login {
+  border-bottom: 3px solid #f9b17a;
+  padding: 0.2rem 0.4rem;
+}
+.login-links ul li .signup {
+  color: #676f9d;
+}
+
+.info {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid red;
+  color: #fff;
+}
+.info-title {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 0.525rem;
+}
+.info-text {
+  font-weight: 400;
+  font-size: 0.78rem;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #1a1c28;
+  display: relative;
+  min-height: 100vh;
+}
+body .heading {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+body .heading-main {
+  font-weight: 600;
+}
+body .heading-sub {
+  padding-top: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.container .form-left {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #2d3250;
+}/*# sourceMappingURL=main.css.map */

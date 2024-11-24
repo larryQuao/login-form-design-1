@@ -1,0 +1,4 @@
+@mixin font-decorate($fontSize, $fontWeight) {
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
