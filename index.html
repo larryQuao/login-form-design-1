@@ -24,23 +24,28 @@
                     <li><a href="#" class="signup">Signup</a></li>
                 </ul>
             </div>
-                
             <div class="info">  
                 <h3 class="info-title">Login Form!</h3>
-                <p class="info-text">Signin to your account</p>
+                <p class="info-text">Sign into your account</p>
             </div>
 
-            <form action="#">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-
-                <br>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me</label>
+            <form action="#" class="form-main">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="input-group">  <!-- Not strictly necessary, but good for consistency -->
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button>Login</button>
             </form>
+            
+            
 
             <button>Login</button>
 

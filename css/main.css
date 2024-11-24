@@ -26,7 +26,6 @@
 .info {
   margin-top: 4rem;
   margin-bottom: 1.5rem;
-  border: 1px solid red;
   color: #fff;
 }
 .info-title {
@@ -37,6 +36,25 @@
 .info-text {
   font-weight: 400;
   font-size: 0.78rem;
+}
+
+.form-main {
+  background-color: #424769;
+  padding: 0.625rem;
+}
+.form-main .input-group {
+  margin-bottom: 15px;
+}
+.form-main .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #676f9d;
+  font-weight: 600;
+  font-size: 0.725rem;
+}
+.form-main .input-group input[type=email], .form-main .input-group input[type=password] {
+  margin-top: 10px;
+  outline: none;
 }
 
 * {

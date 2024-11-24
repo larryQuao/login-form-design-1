@@ -1,0 +1,31 @@
+@use 'color' as *;
+@use 'mixins' as *;
+
+.form-main {
+    background-color: $color-2;
+    padding: 0.625rem;
+    // margin-bottom: 0.2rem;
+
+    .input-group {
+        margin-bottom: 15px;
+
+        label {
+            display: block; // Takes up full width
+            margin-bottom: 5px; // Small space between label and input
+            color: $color-1;
+            @include font-decorate(0.725rem, 600);
+        }
+
+        input[type='email'], input[type='password'] {
+            margin-top: 10px;
+            // background-color: $color-2;
+            outline: none;
+        }
+
+    // input {
+    //     background-color: $color-2;
+    //     outline: none;
+    // }
+
+    }
+}
