@@ -1,0 +1,23 @@
+@use 'color' as *;
+@use 'mixins' as *;
+
+.other-link {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    // margin-bottom: 3rem;
+
+    p {
+        @include font-decorate(0.725rem, 500);
+        color: $color-1;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+        i {
+            font-size: 24px;
+            color: $color-1;
+        }
+    }
+}

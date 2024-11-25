@@ -2,6 +2,8 @@
 @use 'login-links' as *;
 @use 'info' as *;
 @use 'form' as *;
+@use 'button' as *;
+@use 'other-link' as *;
 
 * {
     margin: 0;
@@ -12,16 +14,17 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: $color-4;
-    display: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .heading {
-        position: absolute;
-        top: 20%;
-        left: 50%;  
-        transform: translate(-50%, -50%);
         text-align: center;
         color: $color-white;
+        margin-bottom: 3.5rem;
+;
 
         &-main {
             font-weight: 600;
@@ -36,19 +39,43 @@ body{
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    max-width: 1200px;
     width: 70%;
-    // height: 8rem;
     margin: 0 auto;
-    background-color: $color-white;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 60px 25px rgba(black, 0.3);
 
     .form-left {
+        max-width: 800px !important;
         width: 50%;
         height: 100%;
-        padding: 1rem;
+        padding: 3rem;
+        border-radius: 1rem 0 0 1rem ;
         background-color: $color-3;
+    }
+    .form-right {
+        max-width: 800px !important;
+        width: 50%;
+        padding: 3rem;
+        border-radius: 0 1rem 1rem 0 ;
+        background: url('../image/landscape.jpg');
+        background-size: cover;
+        background-position: center
+    }
+
+    @media (max-width: 968px) {
+        flex-direction: column-reverse;
+
+        .form-left{
+            width: 100%;
+            border-radius: 0 0 1rem 1rem ;
+        }
+
+        .form-right{
+            width: 100%;
+            height: 100vh;
+            border-radius: 1rem 1rem 0 0;
+        }
     }
 }

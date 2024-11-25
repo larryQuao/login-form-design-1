@@ -29,25 +29,22 @@
                 <p class="info-text">Sign into your account</p>
             </div>
 
-            <form action="#" class="form-main">
-                <div class="input-group">
+            <form action="#">
+                <div class="input-group form-main">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" class= "form-input" required>
                 </div>
-                <div class="input-group">
+                <div class="input-group form-main">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password" class="form-input" required>
+                    <span class="password-toggle"><i></i></span>
                 </div>
-                <div class="input-group">  <!-- Not strictly necessary, but good for consistency -->
+                <div class="input-group checkbox">  <!-- Not strictly necessary, but good for consistency -->
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember">Remember me</label>
                 </div>
-                <button>Login</button>
             </form>
-            
-            
-
-            <button>Login</button>
+            <button class="btn">Login</button>
 
             <div class="other-link">
                 <p>Follow us on</p>
@@ -58,9 +55,19 @@
             </div>
             
         </div>
-        <div class="form-right"></div>
+        <div class="form-right">
+        </div>
     </div>
 
     <script src="https://kit.fontawesome.com/ecc73d8886.js" crossorigin="anonymous"></script>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const togglePassword = document.querySelector('.password-toggle');
+
+        togglePassword.addEventListener('click', () => {
+            passwordInput.type = passwordInput.type === 'password'? 'text' : 'password';
+            togglePassword.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
